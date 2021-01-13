@@ -1,4 +1,4 @@
-package QA.QA;
+package QA.UAT;
 
 import javax.swing.JOptionPane;
 import org.openqa.selenium.By;
@@ -17,7 +17,8 @@ public class Main
     	
     	try {
     		
-			Solicitudes Navegador = new Solicitudes();
+			Posnet Navegador = new Posnet();
+		
 			String msg = "", opc = "";
 			
 
@@ -30,20 +31,11 @@ public class Main
 		   
 		    	
 		    	String menu = "";
-				menu += "a)	Crear_registro                    \n";
-				menu += "b)	Login                             \n";
-				menu += "c) Eliminar_carrito                  \n";
-				menu += "d) Eliminar_tarjeta                  \n";
-				menu += "e) Ingreso_datos_facturacion         \n";
-				menu += "f) Eliminar_datos_facturacion        \n";
-				menu += "g) Carrito_Delivery_PickUp_A1        \n";
-				menu += "h) Carrito_PickUp_Delivery_A1        \n";
-				menu += "i) Carrito_Delivery_FastDelivery_A1  \n";
-				menu += "j) Tres_Articulos_por_700            \n";
-				menu += "k) Descuento_1000_AMEX               \n";
-				menu += "l) Descuento_1000_AMEX               \n";
-				menu += "m) Cupon_PAUTOMAT                    \n";
-				menu += "n) Cupon_PAUTOMAT2                   \n";
+				menu += "a)	Venta_Valora                      \n";
+				menu += "b)	Venta_Momentos                    \n";
+				menu += "c)	Venta_Plenitud                    \n";
+				menu += "d)	Venta_Vida                        \n";
+				
 
 				
 				
@@ -51,47 +43,18 @@ public class Main
 
 				switch (producto) {
 				case "a":
-					Navegador.Crear_registro(controlador, producto);
+					Navegador.Venta_Valora(controlador, producto);
 					break;
 				case "b":
-					Navegador.Login(controlador,producto);
+					Navegador.Venta_Momentos(controlador,producto);
 					break;
 				case "c":
-					Navegador.Eliminar_carrito(controlador,producto);
+					Navegador.Venta_Plenitud(controlador,producto);
 					break;
 				case "d":
-					Navegador.Eliminar_tarjeta(controlador,producto);
+					Navegador.Venta_Vida(controlador,producto);
 					break;
-				case "e":
-					Navegador.Ingreso_datos_facturacion(controlador,producto);
-					break;
-				case "f":
-					Navegador.Eliminar_datos_facturacion(controlador,producto);
-					break;
-				case "g":
-					Navegador.Carrito_Delivery_PickUp_A1(controlador,producto);
-					break;
-				case "h":
-					Navegador.Carrito_PickUp_Delivery_A1(controlador,producto);
-					break;
-				case "i":
-					Navegador.Carrito_Delivery_FastDelivery_A1(controlador,producto);
-					break;
-				case "j":
-					Navegador.Tres_Articulos_por_700(controlador,producto);
-					break;
-				case "k":
-					Navegador.Descuento_1000_AMEX(controlador,producto);
-					break;
-				case "l":
-					Navegador.Compra_dos_SKU(controlador,producto);
-					break;
-				case "m":
-					Navegador.Cupon_PAUTOMAT(controlador,producto);
-					break;
-				case "n":
-					Navegador.Cupon_PAUTOMAT2(controlador,producto);
-					break;
+				
 
 				default:
 					JOptionPane.showConfirmDialog(null, "Opción Incorrecta");

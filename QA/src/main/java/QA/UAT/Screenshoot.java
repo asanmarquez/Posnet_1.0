@@ -1,4 +1,4 @@
-package QA.QA;
+package QA.UAT;
 
 import java.io.File;
 import java.io.IOException;
