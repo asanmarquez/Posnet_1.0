@@ -61,6 +61,7 @@ public class Posnet {
 		System.out.println("------------Conexion exitosa-------------");
 		File scrFile1 = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile1, new File("d:\\Evidencias_Automatizacion\\Valora\\Conexion_exitosa.png"));
+		/*------------------------------- Cuenta Clabe ---------------------------------------*/
 		System.out.println("-----------------------------------------");
 		System.out.println("----------Seleccion de Producto----------");
 		System.out.println("-----------------------------------------");
@@ -141,12 +142,12 @@ public class Posnet {
 		FileUtils.copyFile(scrFile6, new File("d:\\Evidencias_Automatizacion\\Valora\\Tramite Exitoso Plan 1.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
 		System.out.println("--------------Venta Exitosa--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("--------------Cuenta Clabe --------------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 		Thread.sleep(2000);
 
-		/*--------------------------------------------*/	
+		/*------------------------------- Tarjeta de Credito ---------------------------------------*/	
 		System.out.println("-----------------------------------------");
 		System.out.println("----------Seleccion de Producto----------");
 		System.out.println("-----------------------------------------");
@@ -227,12 +228,12 @@ public class Posnet {
 		FileUtils.copyFile(scrFile12, new File("d:\\Evidencias_Automatizacion\\Valora\\Tramite Exitoso Plan 2.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
 		System.out.println("------------Venta Exitosa 2--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("------------Tarjeta de Debito--------------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 		Thread.sleep(2000);
 		
-		/*--------------------------------------------*/	
+		/*------------------------------- Tarjeta de Debito ---------------------------------------*/	
 		System.out.println("-----------------------------------------");
 		System.out.println("----------Seleccion de Producto----------");
 		System.out.println("-----------------------------------------");
@@ -314,7 +315,7 @@ public class Posnet {
 		FileUtils.copyFile(scrFile18, new File("d:\\Evidencias_Automatizacion\\Valora\\Tramite Exitoso Plan 3.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
 		System.out.println("--------------Venta Exitosa--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("--------------Tarjeta de Debito-------------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 	}
@@ -429,7 +430,7 @@ public class Posnet {
 		FileUtils.copyFile(scrFile6, new File("d:\\Evidencias_Automatizacion\\Momentos\\Tramite Exitoso Plan 1.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
 		System.out.println("--------------Venta Exitosa--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("--------------Cuenta Clabe --------------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 		Thread.sleep(2000);
@@ -514,8 +515,8 @@ public class Posnet {
 		File scrFile12 = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile12, new File("d:\\Evidencias_Automatizacion\\Momentos\\Tramite Exitoso Plan 2.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
-		System.out.println("------------Venta Exitosa 2--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("--------------Venta Exitosa--------------");
+		System.out.println("------------Tarjeta de Credito-----------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 		Thread.sleep(2000);
@@ -602,7 +603,7 @@ public class Posnet {
 		FileUtils.copyFile(scrFile18, new File("d:\\Evidencias_Automatizacion\\Momentos\\Tramite Exitoso Plan 3.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
 		System.out.println("--------------Venta Exitosa--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("------------Tarjeta de Debito------------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 	}
@@ -836,8 +837,8 @@ public class Posnet {
 		File scrFile12 = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile12, new File("d:\\Evidencias_Automatizacion\\Plenitud\\Tramite Exitoso Plan 2.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
-		System.out.println("------------Venta Exitosa 2--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("--------------Venta Exitosa--------------");
+		System.out.println("------------Tarjeta de Credito-----------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 		Thread.sleep(2000);
@@ -940,7 +941,7 @@ public class Posnet {
 		FileUtils.copyFile(scrFile18, new File("d:\\Evidencias_Automatizacion\\Plenitud\\Tramite Exitoso Plan 3.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
 		System.out.println("--------------Venta Exitosa--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("------------Tarjeta de Debito------------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 	}
@@ -1173,8 +1174,8 @@ public class Posnet {
 		File scrFile12 = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile12, new File("d:\\Evidencias_Automatizacion\\Vida\\Tramite Exitoso Plan 2.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
-		System.out.println("------------Venta Exitosa 2--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("--------------Venta Exitosa--------------");
+		System.out.println("------------Tarjeta de Credito-----------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 		Thread.sleep(2000);
@@ -1276,7 +1277,7 @@ public class Posnet {
 		FileUtils.copyFile(scrFile18, new File("d:\\Evidencias_Automatizacion\\Vida\\Tramite Exitoso Plan 3.png"));
 		controlador.findElement(By.id("frmVenta:cmdPrint")).click();
 		System.out.println("--------------Venta Exitosa--------------");
-		System.out.println("-----------------------------------------");
+		System.out.println("------------Tarjeta de Debito------------");
 		Thread.sleep(10000);
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 	}
