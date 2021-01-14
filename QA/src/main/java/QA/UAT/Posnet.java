@@ -1180,7 +1180,7 @@ public class Posnet {
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 		Thread.sleep(2000);
 		
-		/*--------------------------------------------*/	
+		/*---------------------------------------------*/	
 		System.out.println("-----------------------------------------");
 		System.out.println("----------Seleccion de Producto----------");
 		System.out.println("-----------------------------------------");
