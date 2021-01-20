@@ -18,7 +18,7 @@ public class Main
     	try {
     		
 			Posnet Navegador = new Posnet();
-		
+		    PosnetVW Navegador2 = new PosnetVW();
 			String msg = "", opc = "";
 			
 
@@ -57,6 +57,12 @@ public class Main
 					break;
 				case "e":
 					Navegador.Venta_Salud(controlador,producto);
+					break;
+				case "1":
+					Navegador2.Venta_VW_Bank_Nuevos(controlador,producto);
+					break;
+				case "2":
+					Navegador2.Venta_VW_Bank_Usados(controlador,producto);
 					break;
 				
 
