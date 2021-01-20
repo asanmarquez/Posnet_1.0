@@ -35,6 +35,7 @@ public class Main
 				menu += "b)	Venta_Momentos                    \n";
 				menu += "c)	Venta_Plenitud                    \n";
 				menu += "d)	Venta_Vida                        \n";
+				menu += "e)	Venta_Salud                       \n";
 				
 
 				
@@ -53,6 +54,9 @@ public class Main
 					break;
 				case "d":
 					Navegador.Venta_Vida(controlador,producto);
+					break;
+				case "e":
+					Navegador.Venta_Salud(controlador,producto);
 					break;
 				
 
