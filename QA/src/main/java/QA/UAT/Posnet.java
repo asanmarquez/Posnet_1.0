@@ -1979,5 +1979,6 @@ public class Posnet {
 		controlador.findElement(By.id("frmVenta:j_idt51")).click();
 	}
 
-			
+	
+    
 }	
