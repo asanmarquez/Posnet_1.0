@@ -36,6 +36,10 @@ public class Main
 				menu += "c)	Venta_Plenitud                    \n";
 				menu += "d)	Venta_Vida                        \n";
 				menu += "e)	Venta_Salud                       \n";
+				menu += "b)	Venta_VW_Bank_Nuevos              \n";
+				menu += "c)	Venta_VW_Bank_Usados              \n";
+				menu += "d)	Venta_VW_Pago_de_contado_Nuevos   \n";
+				menu += "d)	Venta_VW_Pago_de_contado_Usados   \n";
 				
 
 				
@@ -64,6 +68,15 @@ public class Main
 				case "2":
 					Navegador2.Venta_VW_Bank_Usados(controlador,producto);
 					break;
+				case "3":
+					Navegador2.Venta_VW_Pago_de_contado_Nuevos(controlador,producto);
+					break;
+				case "4":
+					Navegador2.Venta_VW_Pago_de_contado_usados(controlador,producto);
+					break;
+					
+					
+					
 				
 
 				default:
