@@ -31,7 +31,7 @@ public class Main
 		   
 		    	
 		    	String menu = "";
-				menu += "a)	Venta_Valora                      \n";
+				menu += "a)	Venta_Valora                       \n";
 				menu += "b)	Venta_Momentos                    \n";
 				menu += "c)	Venta_Plenitud                    \n";
 				menu += "d)	Venta_Vida                        \n";

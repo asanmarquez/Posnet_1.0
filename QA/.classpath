@@ -37,6 +37,6 @@
 	<classpathentry kind="lib" path="C:/Program Files (x86)/eclipse/libs/selenium-java-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/eclipse/libs/selenium-server-3.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/eclipse/libs/testng-6.8.21.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrador/workspace/poi-ooxml-3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/eclipse/libs/poi-ooxml-3.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
