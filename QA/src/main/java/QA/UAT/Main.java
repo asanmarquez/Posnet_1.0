@@ -39,7 +39,7 @@ public class Main
 				menu += "1)	Venta_VW_Bank_Nuevos              \n";
 				menu += "2)	Venta_VW_Bank_Usados              \n";
 				menu += "3)	Venta_VW_Pago_de_contado_Nuevos   \n";
-				menu += "4)	Venta_VW_Pago_de_contado_Usados   \n";
+				menu += "4)	Venta_VW_Pago_de_contado_Usados    \n";
 				
 
 				
