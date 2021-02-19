@@ -36,10 +36,10 @@ public class Main
 				menu += "c)	Venta_Plenitud                    \n";
 				menu += "d)	Venta_Vida                        \n";
 				menu += "e)	Venta_Salud                       \n";
-				menu += "b)	Venta_VW_Bank_Nuevos              \n";
-				menu += "c)	Venta_VW_Bank_Usados              \n";
-				menu += "d)	Venta_VW_Pago_de_contado_Nuevos   \n";
-				menu += "d)	Venta_VW_Pago_de_contado_Usados   \n";
+				menu += "1)	Venta_VW_Bank_Nuevos              \n";
+				menu += "2)	Venta_VW_Bank_Usados              \n";
+				menu += "3)	Venta_VW_Pago_de_contado_Nuevos   \n";
+				menu += "4)	Venta_VW_Pago_de_contado_Usados   \n";
 				
 
 				
@@ -47,7 +47,7 @@ public class Main
 				String producto = JOptionPane.showInputDialog(null, menu, " Selecciona una opción ", 3);
 
 				switch (producto) {
-				case "a":
+				case "a" : 
 					Navegador.Venta_Valora(controlador, producto);
 					break;
 				case "b":

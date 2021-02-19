@@ -40,6 +40,19 @@ public class PosnetVW {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Valora\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -168,6 +181,19 @@ public class PosnetVW {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Valora\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -298,6 +324,19 @@ public class PosnetVW {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Momentos\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -594,6 +633,19 @@ public class PosnetVW {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Momentos\\Inicio Login.png"));
 		Thread.sleep(1000);

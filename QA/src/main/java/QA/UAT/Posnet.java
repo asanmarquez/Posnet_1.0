@@ -40,6 +40,20 @@ public class Posnet {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
+		
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Valora\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -84,15 +98,16 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Valora");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Paterno");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
 		controlador.findElement(By.id("frmAsegurado:inputEMail")).sendKeys("test@test.com");
 		controlador.findElement(By.xpath("//*[@id='frmAsegurado:radioSexo']/tbody/tr/td[1]/div/div[2]")).click();
 		controlador.findElement(By.id("frmAsegurado:inputCalle")).sendKeys("Gomas");
-		controlador.findElement(By.id("frmAsegurado:inputNumExt")).sendKeys("61");
+		controlador.findElement(By.id("frmAsegurado:input"
+				+ "NumExt")).sendKeys("61");
 		controlador.findElement(By.id("frmAsegurado:inputCP")).sendKeys("08100"); 
 		controlador.findElement(By.id("frmAsegurado:inputNumInt")).click();
 		Thread.sleep(4000);
@@ -171,8 +186,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Valora");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -262,8 +277,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Valora");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -337,6 +352,19 @@ public class Posnet {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Momentos\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -380,8 +408,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Momentos");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -467,8 +495,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Momentos");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -558,8 +586,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Momentos");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -633,6 +661,19 @@ public class Posnet {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Plenitud\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -676,8 +717,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("LALALA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -706,8 +747,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -780,8 +821,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -810,8 +851,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -885,8 +926,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -915,8 +956,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -993,8 +1034,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1023,8 +1064,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -1084,6 +1125,19 @@ public class Posnet {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Vida\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -1127,8 +1181,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1157,8 +1211,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -1230,8 +1284,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1260,8 +1314,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -1334,8 +1388,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1364,8 +1418,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -1441,8 +1495,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1471,8 +1525,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("Test");
-		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("Test");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAP")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmBeneficiarios:inputBenAM")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmBeneficiarios:inputBenParent")).click();
 		Thread.sleep(2000);
 		controlador.findElement(By.xpath("//*[@id='frmBeneficiarios:inputBenParent_panel']/div/ul/li[5]")).click();
@@ -1530,6 +1584,19 @@ public class Posnet {
 		System.out.println("-----------------------------------------");
 		controlador.get("https://cardifonline-uat.com.mx/posnet/login.jsf#");
 		System.out.println("-----------------------------------------");
+		try {
+			controlador.findElement(By.id("details-button")).click();
+		}
+		catch (Exception e) {
+			Thread.sleep(100);
+		}
+		try {
+			controlador.findElement(By.id("proceed-link")).click();
+			Thread.sleep(500);
+		}
+		catch (Exception e) {
+			Thread.sleep(500);
+		}
 		File scrFile = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("d:\\Evidencias_Automatizacion\\Vida\\Inicio Login.png"));
 		Thread.sleep(1000);
@@ -1573,8 +1640,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1605,8 +1672,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("01/01/2000");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("NALA000101");
@@ -1679,8 +1746,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1711,8 +1778,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("01/01/2000");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("NALA000101");
@@ -1786,8 +1853,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1818,8 +1885,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("01/01/2000");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("NALA000101");
@@ -1896,8 +1963,8 @@ public class Posnet {
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("SAMA8805314A0");
 		controlador.findElement(By.id("frmAsegurado:inputTelefono")).sendKeys("5511235813");
@@ -1928,8 +1995,8 @@ public class Posnet {
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
-		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("Test");
-		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("Test");
+		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
+		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("01/01/2000");
 		controlador.findElement(By.id("frmAsegurado:inputRFC")).sendKeys("NALA000101");
