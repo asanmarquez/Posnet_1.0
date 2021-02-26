@@ -1639,7 +1639,7 @@ public class Posnet {
 		Thread.sleep(1500);
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
@@ -1671,7 +1671,7 @@ public class Posnet {
 		Thread.sleep(2000);
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados Beneficiario");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
@@ -1745,7 +1745,7 @@ public class Posnet {
 		Thread.sleep(1500);
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
@@ -1777,7 +1777,7 @@ public class Posnet {
 		Thread.sleep(2000);
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados Beneficiario");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
@@ -1852,7 +1852,7 @@ public class Posnet {
 		Thread.sleep(1500);
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
@@ -1884,7 +1884,7 @@ public class Posnet {
 		Thread.sleep(2000);
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados Beneficiario");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
@@ -1962,7 +1962,7 @@ public class Posnet {
 		Thread.sleep(1500);
 		System.out.println("------Ingresando Datos Contratante-------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Vida");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:popupfhNac_input")).sendKeys("31/05/1988");
@@ -1994,7 +1994,7 @@ public class Posnet {
 		Thread.sleep(2000);
 		System.out.println("------Agregando Beneficiarios------------");
 		System.out.println("-----------------------------------------");
-		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Plenitud Beneficiario");
+		controlador.findElement(By.id("frmAsegurado:inputNombre")).sendKeys("Cuidados Beneficiario");
 		controlador.findElement(By.id("frmAsegurado:inputAPaterno")).sendKeys("TestQA");
 		controlador.findElement(By.id("frmAsegurado:inputAMaterno")).sendKeys("TestQA");
 		
