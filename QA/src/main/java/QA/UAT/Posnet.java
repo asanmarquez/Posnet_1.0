@@ -2022,7 +2022,7 @@ public class Posnet {
 		controlador.findElement(By.id("frmCobros:inputNuTarjetaL")).sendKeys("5125");
 		controlador.findElement(By.id("frmCobros:inputFHVenc")).click();
 		controlador.findElement(By.id("frmCobros:inputFHVenc")).sendKeys("08/2022");
-		controlador.findElement(By.id("frmCobros:codSeg")).sendKeys("123");
+		controlador.findElement(By.id("frmCobros:codSeg")).sendKeys("124");
 		Thread.sleep(2000);
 		File scrFile1622 = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile1622, new File("d:\\Evidencias_Automatizacion\\Vida\\Medio de Pago Plan 3.png"));
