@@ -453,7 +453,7 @@ public class Posnet {
 		File scrFile05 = ((TakesScreenshot)controlador).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile05, new File("d:\\Evidencias_Automatizacion\\Momentos\\Medio de Pago_1.png"));
 		Thread.sleep(2000);
-		System.out.println("----------Confirmacion de Datos----------");
+		System.out.println("----------Confirmacion de Datos---------");
 		System.out.println("-----------------------------------------");
 		controlador.findElement(By.id("formVentaConfirm:aceptaDatos")).click();
 		Thread.sleep(2000);
