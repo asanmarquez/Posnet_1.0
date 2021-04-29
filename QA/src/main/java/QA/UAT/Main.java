@@ -40,6 +40,7 @@ public class Main
 				menu += "2)	Venta_VW_Bank_Usados              \n";
 				menu += "3)	Venta_VW_Pago_de_contado_Nuevos   \n";
 				menu += "4)	Venta_VW_Pago_de_contado_Usados   \n";
+				menu += "0)	Regresion  Scotiabank              \n";
 				
 
 				
@@ -73,6 +74,9 @@ public class Main
 					break;
 				case "4":
 					Navegador2.Venta_VW_Pago_de_contado_usados(controlador,producto);
+					break;
+				case "0":
+					Navegador.Regresion(controlador,producto);
 					break;
 					
 					
